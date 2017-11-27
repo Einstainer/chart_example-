@@ -3,7 +3,7 @@ var chart;
 var startTime;
 
 var watchID;
-var accelerometerOptions = { frequency: 2000 };  // Update every 2 seconds
+var accelerometerOptions = { frequency: 100 };  // Update every 2 seconds
 
 $(document).on("pagecreate", "#chartPage", function () {
 	
@@ -84,7 +84,7 @@ function updateFreq() {
 function updateChart(random) {
       	
       	//set new random y values
-      	yVal = acceleration.x;
+      	yVal = acceleration.y;
 		
 		//x value is time since start 
 		xVal = Date.now() - startTime;
