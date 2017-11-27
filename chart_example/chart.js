@@ -76,13 +76,14 @@ function updateFreq() {
 	//do something to update freq. here.
     
     
-    if(watchID == null)
+    if(watchID != null)
     {
-        starSensor();
+        stopSensor();
+        
     }
     else
     {
-        stopSensor();
+        starSensor();
     }
     
 }
