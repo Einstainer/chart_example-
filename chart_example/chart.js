@@ -75,17 +75,10 @@ function accelerometerSuccess(acceleration) {
 function updateFreq() {
 	//do something to update freq. here.
     
+    stopSensor();
+    starSensor();
     
-    if(watchID != null)
-    {
-        stopSensor();
-        
-    }
-    else
-    {
-        starSensor();
-    }
-    
+   
 }
 
 function updateChart(random) {
